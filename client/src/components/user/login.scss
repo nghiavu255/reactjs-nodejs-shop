@@ -1,0 +1,78 @@
+@use '../../scss/' as *;
+.login{
+  z-index: 2;
+  width: 400px;
+  height: 250px;
+  background-color: $main-color;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  transition: opacity 0.5s;
+  opacity: 0.9;
+  border: 1px solid gray;
+  &:hover{
+      opacity:1;
+      transition: opacity 0.5s;
+  }
+  img{
+    width: 100px;
+    margin: 10px auto 0px auto;
+  }
+  label{
+    font-size: 1.2rem;
+    input{
+      margin-left: 20px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      padding: 4px;
+      border: 1px solid gray;
+    }
+  }
+  button{
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    margin-left: 180px;
+  }
+  
+}
+
+form{
+    label{
+          display: block;  
+        }
+}
+.close{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  font-size: 1rem;
+  right: 10px;
+  top: 0px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid gray;
+  &:hover{
+    transform: font-size 0.3s ease;
+  }
+}
+.remove{
+  display: none !important;
+}
+.eror{
+  position: fixed;
+  left: 100%;
+  top: 2%;
+  width: 370px;
+  height: 60px;
+  background-color: rgb(253, 214, 214);
+  border-radius: 2px;
+  color: red;
+}
+.err{
+  width: 370px;
+  transform: width 1s ease ;
+}

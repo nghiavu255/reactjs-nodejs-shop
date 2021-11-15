@@ -1,0 +1,15 @@
+export const apiUrl =
+	process.env.NODE_ENV !== 'production'
+		? 'http://localhost:5000/api'
+		: 'https://vast-shelf-06076.herokuapp.com/api'
+export const LOCAL_STORAGE_TOKEN_NAME = 'learnit-mern'
+export const PRODUCTS_LOADED_REQUEST = 'PRODUCTS_LOADED_REQUEST'
+export const PRODUCTS_LOADED_SUCCESS = 'PRODUCTS_LOADED_SUCCESS'
+export const PRODUCTS_LOADED_FAIL = 'PRODUCTS_LOADED_FAIL'
+export const ADD_TO_CART = 'ADD_TO_CART'
+
+export const PRODUCTS_LOADED_PAGE = 'PRODUCTS_LOADED_PAGE'
+// export const ADD_POST = 'ADD_POST'
+// export const DELETE_POST = 'DELETE_POST'
+// export const UPDATE_POST = 'UPDATE_POST'
+// export const FIND_POST = 'FIND_POST'

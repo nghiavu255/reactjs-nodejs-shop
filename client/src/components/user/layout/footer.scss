@@ -1,0 +1,29 @@
+@use '../../../scss/' as *;
+.footer{
+    width: 100%;
+    background-color: rgb(58, 58, 57);
+    display: flex;
+
+    &__nav{
+        flex: 1;
+        margin-top: 20px;
+
+        :first-child{
+            font-size: 2rem;
+        }
+        div{
+            display: block;
+            position: relative;
+            color: rgb(209, 211, 212);
+            padding-bottom: 1rem;
+            font-size: 1.1rem;
+            &:hover{
+                color: $hover-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
+img{
+    width: 250px;
+}
